@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://gongchenlin.com/2017/01/21/ajax%E5%92%8Cjs%E5%8A%A8%E7%94%BB/</loc>
+    <loc>http://gongchenlin.com/categories/index.html</loc>
     
-    <lastmod>2017-03-16T16:20:56.493Z</lastmod>
+    <lastmod>2017-03-16T16:47:30.725Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://gongchenlin.com/tags/index.html</loc>
     
-    <lastmod>2017-03-16T13:07:15.013Z</lastmod>
+    <lastmod>2017-03-16T16:43:27.544Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://gongchenlin.com/2017/01/21/ajax%E5%92%8Cjs%E5%8A%A8%E7%94%BB/</loc>
+    
+    <lastmod>2017-03-16T16:20:56.493Z</lastmod>
     
   </url>
   
