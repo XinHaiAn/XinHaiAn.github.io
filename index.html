@@ -700,7 +700,19 @@ Ajax的全称 Asynchronous javascript and XML 异步的javascript和xml,他使�
       
 
       
-
+      
+      <!-- friendLinks -->
+      <% if (site.data.links){ %>
+        <div class="widget tag">
+          <h3 class="title">友情链接</h3>
+            <ul class="entry">
+              <% for (var i in site.data.links){ %>
+                <li class='link'><a href='<%- site.data.links[i] %>'><%= i %></a></li>
+              <% } %>
+            </ul>
+        </div>
+      <% } %>
+      
     </div>
   </aside>
 
