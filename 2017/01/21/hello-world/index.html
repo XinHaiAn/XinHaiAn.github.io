@@ -592,6 +592,20 @@ Quick">
 
         
         
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://isfeiben.com/" title="飞奔" target="_blank">飞奔</a>
+                </li>
+              
+            </ul>
+          </div>
+        
 
         
 
@@ -616,19 +630,6 @@ Quick">
       <!--/noindex-->
       
 
-      
-      
-      <!-- friendLinks -->
-      <% if (site.data.links){ %>
-        <div class="widget tag">
-          <h3 class="title">友情链接</h3>
-            <ul class="entry">
-              <% for (var i in site.data.links){ %>
-                <li class='link'><a href='<%- site.data.links[i] %>'><%= i %></a></li>
-              <% } %>
-            </ul>
-        </div>
-      <% } %>
       
     </div>
   </aside>
