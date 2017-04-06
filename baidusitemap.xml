@@ -4,17 +4,20 @@
 
     
   <url>
-    <loc>http://gongchenlin.com/2016/03/24/test/</loc>
-    <lastmod>2017-04-06T12:24:48.457Z</lastmod>
+    <loc>http://gongchenlin.com/2016/07/08/first/</loc>
+    <lastmod>2017-04-06T13:07:49.297Z</lastmod>
     <data>
         <display>
-        <title>test</title>
-        <pubTime>2016-03-24T12:23:41.000Z</pubTime>
+        <title>使用github和hexo搭建个人博客(一)</title>
+        <pubTime>2016-07-08T12:28:57.000Z</pubTime>
         
-        <tag>test</tag>
+        <tag>搭建博客</tag>
          
          
            
+             
+              <breadCrumb title="hexo" url="http://gongchenlin.com/categories/hexo/"/>
+          
         </display>
     </data>
     </url>
