@@ -3,9 +3,16 @@
   
     
     <entry>
+      <title><![CDATA[使用github和hexo搭建个人博客(二)]]></title>
+      <url>%2F2016%2F07%2F08%2Fsecond%2F</url>
+      <content type="text"><![CDATA[事前准备和搭建github1.安装node.js、git 安装node.js打开node.js官网，下载合适的版本，并运行。安装完node后会顺带安装好npm(node包管理器)。 打开git官网，下载合适的版本，并运行。 2.注册github 首先我们要有一个github帐号，身为程序员的我们应该都有github帐号，毕竟github上有那么多的资源供我们学习 打开github官网，输入用户名、邮箱（重要）、密码，点击注册，然后到邮箱确认注册信息就可以使用了。 3.配置ssh key 打开git bash 键入命令：cd ~/. ssh (检查本机是否已存在的ssh密钥）如果之前没有使用过 则会提示 No such file or directory 键入命令：ssh-keygen -t rsa -C “邮件地址” （连击三次回车生成 ssh key,邮箱地址写注册时的地址） 打开github的设置，进入SSH and GPG keys 选项，新建SSH keys ,title随便写（最好写的以后可以记得是写博客用的）打开电脑上 C:\Users\Administrator\ .ssh文件夹 里面有刚刚生成的密钥找到 id_rsa.pub 文件 ，把内容复制到 key里 点击新增SSH key 检测是否配置成功 键入命令：ssh -T git@github.com返回如下 说明配置成功Hi XinHaiAn! You’ve successfully authenticated, but GitHub does not provide shell access. 配置用户信息（用户名和邮箱） 键入命令：git config –global user.name “你的github用户名”git config –global user.email “你的github注册邮箱”比如我的git config –global user.name “XinHaiAn”git config –global user.email “7527**5@qq.com” 4.在github上新建一个仓库 在github上新建一个名为: 用户名.github.io 的仓库（每个账户只能建立一个）。比如我的用户名是XinHaiAn 我的仓库名为就是 XinHaiAn.github.io（我的博客地址就是https://xinhaian.github.io ）]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[使用github和hexo搭建个人博客(一)]]></title>
       <url>%2F2016%2F07%2F08%2Ffirst%2F</url>
-      <content type="text"><![CDATA[######我为什么要搭建自己的博客？ 在小学的时候，老师会要求我们每周写周记并且要上交。至今仍能想起自己当时偷懒的模样…上中学时，习惯了在书本上记笔记，上面密密麻麻的字还有一些插画…高中了，有了专门的笔记本。年纪大了以后，心里有了一些事情了，自己也开始记起了笔记。虽然现在我们习惯了在社交软件上记录自己的心情，我心底还是倾向于在纸上写下自己的想法和心情。但毕竟现在是互联网时代了，在网上写东西多了不少便利，尤其是对于我们学习软件的，在技术越来越复杂的年代，单靠人的脑袋是记不住那么多的东西，但有时我们有需要查以前的知识点，再去翻以前的笔记就困难多了。现在网上有很多免费的博客供我们使用，当然要好好利用了。但是我们心底都会追求个性化，正好可以利用github和hexo搭建自己的免费博客并设置自己的主题以实现自己的风格。]]></content>
+      <content type="text"><![CDATA[我为什么要搭建自己的博客？ 在小学的时候，老师会要求我们每周写周记并且要上交。至今仍能想起自己当时偷懒的模样…上中学时，习惯了在书本上记笔记，上面密密麻麻的字还有一些插画…高中了，有了专门的笔记本。年纪大了以后，心里有了一些事情了，自己也开始记起了笔记。虽然现在我们习惯了在社交软件上记录自己的心情，我心底还是倾向于在纸上写下自己的想法和心情。但毕竟现在是互联网时代了，在网上写东西多了不少便利，尤其是对于我们学习软件的，在技术越来越复杂的年代，单靠人的脑袋是记不住那么多的东西，但有时我们有需要查以前的知识点，再去翻以前的笔记就困难多了。现在网上有很多免费的博客供我们使用，当然要好好利用了。但是我们心底都会追求个性化，正好可以利用github和hexo搭建自己的免费博客并设置自己的主题以实现自己的风格。]]></content>
     </entry>
 
     
