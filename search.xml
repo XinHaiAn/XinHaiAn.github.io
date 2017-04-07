@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[使用github和hexo搭建个人博客(终章)]]></title>
+      <url>%2F2016%2F07%2F09%2Ffourth%2F</url>
+      <content type="text"><![CDATA[个性化设置（重点终于来了 ：P ) hexo 官方提供的主题那是真的很不好看，还好支持自定义主题。根目录下有一个themes文件夹里面放的就是主题文件。 hexo官网提供了很多的主题，可以在里面选择自己喜欢的，打开后查看效果按照说明进行安装和配置（这里就不赘述了，相信大家都有自己查看文档的能力）。 我现在使用的主题是NexT 主页里有更详细的说明，刚开始按照步骤来就行了。 绑定域名 不知道你又没有眼热别人的个性化域名呢，反正我眼热了，怎么办呢，剁手买买买！之前周围的朋友有在腾讯云买过域名和服务器，也就被安利了一把。先买了个一年域名玩玩，首年只要四十多，价格还能接受。如果你是学生的话可以更优惠哦，可惜我毕了业。这里讲在腾讯买域名，并不是做广告，只是因为我现在身在深圳，域名备案方便点，大家可以按自己意愿选择。 新建CNAME文件在source文件夹中新建一个CNAME文件（无后缀名），然后用文本编辑器打开，在首行添加你的网站顶级域名，如xxxx.com，注意前面没http://www 然后使用hexo g &amp;&amp; hexo d上传部署。比如我的是gongchenlin.com 进行DNS解析在域名提供商添加dns解析（免费）关于dns解析知乎上有很多方法，我的朋友只添加了一个CNAME 文件，然后在 github 上的 博客仓库 进入设置里的Custom domain 添加上域名就可以了。但是我的一直不行，后来有添加了两条 A 记录 才成功。大家可以参考github官网的办法。 域名解析是要一段时间的，解析成功后要等一段时间。至此，搭建博客的教程就结束了，当然博客和域名还有很多其他玩法，大家有兴趣可以自行探索。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[使用github和hexo搭建个人博客(三)]]></title>
       <url>%2F2016%2F07%2F09%2Fthird%2F</url>
       <content type="text"><![CDATA[安装 hexo 写文章并上传1.全局安装 hexo 打开 git bash(在哪里打开都行) 键入命令：npm install -g hexo 2.初始化 hexo 在本地新建一个文件夹hexo（名字可以随便起，将来存放文章或者代码） 比如我的是在E盘下新建了一个Blog文件夹 进入文件夹 右键打开git bash 键入命令 ：hexo init hexo会自动下载一些文件到这个目录，现在我们已经建好了本地博客了。 3.查看本地博客 在博客根文件夹下右键打开 git bash 键入命令： hexo g # 生成文件 hexo s # 启动服务 打开浏览器 键入地址： http://localhost:4000/至此本地博客部署完成！：） 4.上传本第文章到github 这个时候打开我们的博客https://xinhaian.github.io 还是不能访问的，因为我们还没有把本地的代码上传到github上。 配置 _config.yml（全局配置文件）在Blog文件夹根目录下找到并打开_config.yml文件。在文件的最下方修改如下（注意缩进!!!）：deploy: type: git repository: git@github.com:xinhaian/xinhaian.github.io.git branch: master 其中repository是仓库地址，可以在点击github仓库右上角的”clone or down” 按钮后直接复制地址。 安装提交插件在博客根目录下打开git bash 键入命令:npm install hexo-deployer-git --save 提交文章还是在根目录下 键入提交命令：hexo d 提交完成后，我们打开网页 https://xinhaian.github.io 就可以看到效果了。 5.hexo 常用命令 hexo new &quot;文章名&quot; #新建文章 hexo generate #生成静态页面至public目录 hexo server #开启本地预览（默认端口4000，&apos;ctrl + c&apos;关闭） hexo deploy #提交到GitHub仓库 每次我们新建文件和上传的步骤为： hexo n &quot;文章名&quot; #新建文章 hexo g #生成html hexo d #提交 当我们 hexo n “文章名” 新建文章的时候，会在source-&gt;_posts文件夹下生成markdown文件，打开文件编辑完成后保存 运行 hexo g 的时候 hexo会在public文件下生成同名的html文件，最终我们运行 hexo d 提交的就是public文件夹里的文件。]]></content>
