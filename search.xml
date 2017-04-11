@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[纯CSS实现表单元素的美化]]></title>
+      <url>%2F2017%2F04%2F10%2F170410%2F</url>
+      <content type="text"><![CDATA[今天被问到一个题目:用纯CSS实现表单元素（radio/checkbox）的美化。 我首先想到的就是把radio/checked隐藏，使用label的 for=””属性，最后给label设置两套css样式,没选中时一种，选中时一种。 简单实现代码如下： &lt;!DOCTYPE html&gt; &lt;html lang=&quot;en&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;纯CSS实现表单样式&lt;/title&gt; &lt;style&gt; .wrap{ display: inline-block; height: 30px; width: 30px; border-radius: 50%; position: relative; background-color: #ddd; margin: 5px 10px; } input[type=radio]{ visibility: hidden; } .label{ display: inline-block; width: 20px; height: 20px; border-radius: 50%; position: absolute; left: 5px; top: 5px; background-color: #999; transition: all 0.5s ease; } /* 此处一下两个样式不可颠倒 */ .radio[type=radio]:hover + label{ background-color: #666; } .radio[type=radio]:checked + label{ background-color: darkgreen; } &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div class=&quot;wrap&quot;&gt; &lt;input type=&quot;radio&quot; id=&quot;radio1&quot; name=&quot;gender&quot; class=&quot;radio&quot;&gt; &lt;label for=&quot;radio1&quot; class=&quot;label&quot;&gt;&lt;/label&gt; &lt;/div&gt;male &lt;div class=&quot;wrap&quot;&gt; &lt;input type=&quot;radio&quot; id=&quot;radio2&quot; name=&quot;gender&quot; class=&quot;radio&quot;&gt; &lt;label for=&quot;radio2&quot; class=&quot;label&quot;&gt;&lt;/label&gt; &lt;/div&gt;female &lt;/body&gt; &lt;/html&gt; 效果图如下所示： 其实复选框跟这个是一样的，另外复选框还可以做出滑动的效果，只是设置样式不一样。 把代码稍微改动一下可以实现以下效果： 代码如下： &lt;!DOCTYPE html&gt; &lt;html lang=&quot;en&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;纯CSS实现表单样式&lt;/title&gt; &lt;style&gt; .wrap{ display: inline-block; height: 10px; width: 50px; border-radius: 5px; position: relative; background-color: #ddd; margin: 10px 20px; } input[type=checkbox]{ visibility: hidden; } .label{ display: inline-block; width: 20px; height: 20px; border-radius: 50%; position: absolute; left: 0px; top: -5px; background-color: #999; transition: all 0.5s ease; cursor: pointer; } .radio[type=checkbox]:checked + label{ left: 30px; background-color: green; } &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div class=&quot;wrap&quot;&gt; &lt;input type=&quot;checkbox&quot; id=&quot;radio&quot; name=&quot;gender&quot; class=&quot;radio&quot;&gt; &lt;label for=&quot;radio&quot; class=&quot;label&quot;&gt;&lt;/label&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[SassScript]]></title>
       <url>%2F2017%2F01%2F07%2Fsass2%2F</url>
       <content type="text"></content>
