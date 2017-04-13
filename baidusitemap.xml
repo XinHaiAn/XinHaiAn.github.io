@@ -4,6 +4,74 @@
 
     
   <url>
+    <loc>http://gongchenlin.com/2016/01/14/%E5%AE%9A%E4%BD%8D/</loc>
+    <lastmod>2017-04-13T14:31:12.429Z</lastmod>
+    <data>
+        <display>
+        <title>定位</title>
+        <pubTime>2016-01-14T12:10:20.000Z</pubTime>
+        
+        <tag>相对定位</tag>
+         
+        <tag>绝对定位</tag>
+         
+        <tag>固定定位</tag>
+         
+         
+           
+             
+              <breadCrumb title="css" url="http://gongchenlin.com/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://gongchenlin.com/2016/01/12/css/</loc>
+    <lastmod>2017-04-13T13:54:26.957Z</lastmod>
+    <data>
+        <display>
+        <title>css选择器</title>
+        <pubTime>2016-01-12T13:12:26.000Z</pubTime>
+        
+        <tag>web</tag>
+         
+        <tag>css选择器</tag>
+         
+         
+           
+             
+              <breadCrumb title="css" url="http://gongchenlin.com/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://gongchenlin.com/2016/01/10/web/</loc>
+    <lastmod>2017-04-13T13:24:08.425Z</lastmod>
+    <data>
+        <display>
+        <title>web简介</title>
+        <pubTime>2016-01-10T03:12:26.000Z</pubTime>
+        
+        <tag>web</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="http://gongchenlin.com/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gongchenlin.com/2016/01/20/browserCore/</loc>
     <lastmod>2017-04-13T13:07:03.923Z</lastmod>
     <data>
@@ -19,50 +87,6 @@
            
              
               <breadCrumb title="browser" url="http://gongchenlin.com/categories/browser/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gongchenlin.com/2016/01/10/css/</loc>
-    <lastmod>2017-04-13T12:26:41.366Z</lastmod>
-    <data>
-        <display>
-        <title>css</title>
-        <pubTime>2016-01-10T03:12:26.000Z</pubTime>
-        
-        <tag>css</tag>
-         
-        <tag>web</tag>
-         
-         
-           
-             
-              <breadCrumb title="css" url="http://gongchenlin.com/categories/css/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gongchenlin.com/2016/01/10/web/</loc>
-    <lastmod>2017-04-13T12:23:15.752Z</lastmod>
-    <data>
-        <display>
-        <title>web简介</title>
-        <pubTime>2016-01-10T03:12:26.000Z</pubTime>
-        
-        <tag>web</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="web" url="http://gongchenlin.com/categories/web/"/>
           
         </display>
     </data>
